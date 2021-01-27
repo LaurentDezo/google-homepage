@@ -24,15 +24,29 @@
       }
 
       nav {
-
+        width: 100vw;
+        height: 6vh;
+        background-color: orangered;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
       }
-      
-      #nav1 {
 
+      #nav1 {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0.5vw;
       }
 
       #nav2 {
+        display: flex;
+        flex-direction: row;
+        margin-right: 1.5vw;
+      }
 
+      .nav-links {
+        margin: 0px 0.5vw;
       }
 
       main {  
@@ -88,14 +102,14 @@
     <header>
       <nav>
         <div id="nav1">
-          <div class="links"><a href="">About</a></div>
-          <div class="links"><a href="">Store</a></div>
+          <div class="nav-links"><a href="">About</a></div>
+          <div class="nav-links"><a href="">Store</a></div>
         </div>
         <div id="nav2">
-          <div class="links"><a href="">Gmail</a></div>
-          <div class="links"><a href="">Images</a></div>
-          <div class="links"><button></button></div>
-          <div class="links"><button></button></div>
+          <div class="nav-links"><a href="">Gmail</a></div>
+          <div class="nav-links"><a href="">Images</a></div>
+          <div class="nav-links"><button></button></div>
+          <div class="nav-links"><button></button></div>
         </div>
       </nav>
     </header>
