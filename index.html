@@ -5,12 +5,31 @@
   <head>
 
     <style>
+      * { /*This makes all padding and borders not affect box size*/
+         -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+      }
 
       body {
         padding: 0;
         margin: 0;
       }
 
+      header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        background-color: gray;
+        width: 100%;
+      }
     </style>
 
   </head>
