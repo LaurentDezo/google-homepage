@@ -49,7 +49,11 @@
       }
 
       main {  
-      
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
       }
 
       footer {
@@ -88,13 +92,6 @@
       .links {
         margin: 0 1em;
       }
-
-      #ref1 {;
-      }
-
-      #ref2 {
-      }
-
     </style>
 
   </head>
@@ -117,17 +114,18 @@
     </header>
 
     <main>
-        <img src="google_logo.png" alt="Google's logo">
+        <div><img src="google_logo.png" alt="Google's logo"></div>
 
         <form action="">
             <label for="search-bar">
-                <input id="search-bar" type="text"> <button type="submit">Google Search</button>
+              <div><input id="search-bar" type="text"></div>
+              <div><button type="submit">Google Search</button></div>
             </label>
         </form>
 
-        <button>I'm Feeling Lucky</button>
+        <div><button>I'm Feeling Lucky</button></div>
 
-        <p>Google offered in: <a href="">Français</a></p>
+        <div><p>Google offered in: <a href="">Français</a></p></div>
     </main>
 
     <footer>
