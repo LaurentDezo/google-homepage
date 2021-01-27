@@ -14,9 +14,11 @@
       body {
         padding: 0;
         margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
       }
 
       header {
+        font-size: 12px;
         position: fixed;
         top: 0px;
         left: 0px;
@@ -82,13 +84,16 @@
         width: 30vw;
         flex-direction: row;
         justify-content: center;
-        background-color: blue;
         align-items: center;
+      }
+
+      .main-buttons {
+        font-size: 14px;
       }
 
 
       #language-change {
-        margin-top: 5vh;
+        font-size: 12px;
       }
 
       footer {
@@ -97,6 +102,7 @@
         left: 0px;
         background-color: #f2f2f2;
         width: 100vw;
+        font-size: 14px;
       }
       #country-box {
         display: flex;
@@ -157,10 +163,10 @@
 
             <div id="main-button-box">
               <label for="submit">
-                <button type="submit" id="submit">Google Search</button></label>
+                <button type="submit" id="submit" class="main-buttons">Google Search</button></label>
 
               <label for="lucky">
-                <button id="lucky">I'm Feeling Lucky</button></label>
+                <button id="lucky" class="main-buttons">I'm Feeling Lucky</button></label>
               </div>            
         </form>
 
