@@ -60,6 +60,10 @@
         margin-top: 21vh;
       }
 
+      form {
+        height: 15vh;
+      }
+
       #search-bar {
         margin-top: 2vh;
         width: 30vw;
@@ -72,10 +76,16 @@
 
       }
 
+      #main-button-box {
+        display: flex;
+        height: 10vh;
+        width: 30vw;
+        flex-direction: row;
+        justify-content: center;
+        background-color: blue;
+        align-items: center;
       }
-      #main-buttons {
-        margin-top: 5vh;
-      }
+
 
       #language-change {
         margin-top: 5vh;
@@ -143,10 +153,15 @@
 
         <form action="">
             <label for="search-bar">
-              <input id="search-bar" type="text">
-              <div id="main-buttons"><button type="submit">Google Search</button>
-              <button>I'm Feeling Lucky</button></div>
-            </label>
+              <input id="search-bar" type="text"></label>
+
+            <div id="main-button-box">
+              <label for="submit">
+                <button type="submit" id="submit">Google Search</button></label>
+
+              <label for="lucky">
+                <button id="lucky">I'm Feeling Lucky</button></label>
+              </div>            
         </form>
 
         <div id="language-change"><p>Google offered in: <a href="">Français</a></p></div>
