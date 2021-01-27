@@ -56,6 +56,31 @@
         align-items: center;
       }
 
+      #google-box {
+        margin-top: 21vh;
+      }
+
+      #search-bar {
+        margin-top: 2vh;
+        width: 30vw;
+        height: 5vh;
+        border: 1px solid #dadce0;
+        border-radius: 30px;
+      }
+
+      #searchbar:focus {
+
+      }
+
+      }
+      #main-buttons {
+        margin-top: 5vh;
+      }
+
+      #language-change {
+        margin-top: 5vh;
+      }
+
       footer {
         position: fixed;
         bottom: 0px;
@@ -114,18 +139,17 @@
     </header>
 
     <main>
-        <div><img src="google_logo.png" alt="Google's logo"></div>
+        <div id="google-box"><img src="google_logo.png" alt="Google's logo"></div>
 
         <form action="">
             <label for="search-bar">
-              <div><input id="search-bar" type="text"></div>
-              <div><button type="submit">Google Search</button></div>
+              <input id="search-bar" type="text">
+              <div id="main-buttons"><button type="submit">Google Search</button>
+              <button>I'm Feeling Lucky</button></div>
             </label>
         </form>
 
-        <div><button>I'm Feeling Lucky</button></div>
-
-        <div><p>Google offered in: <a href="">Français</a></p></div>
+        <div id="language-change"><p>Google offered in: <a href="">Français</a></p></div>
     </main>
 
     <footer>
