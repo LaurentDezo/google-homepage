@@ -88,7 +88,14 @@
         height: 15vh;
       }
 
+      #search-bar-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
       #search-bar {
+        position: relative;
         margin-top: 2vh;
         width: 30vw;
         height: 5vh;
@@ -96,8 +103,26 @@
         border-radius: 30px;
       }
 
-      #searchbar:focus {
+      #search-bar:hover {
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+      }
 
+      #magnify {
+        width: 18px;
+        height: auto;
+        opacity: 60%;
+        position: absolute;
+        z-index: 1;
+        margin-top: 10px;
+        margin-left: 15px;
+      }
+
+      #microphone {
+        width: 14px;
+        height: auto;
+        position: absolute;
+        margin-top: 10px;
+        right: 36vw;
       }
 
       #main-button-box {
@@ -193,9 +218,14 @@
         <div id="google-box"><img src="google_logo.png" alt="Google's logo"></div>
 
         <form action="">
+          <div id="search-bar-box">
+            <img src="magnifying_glass.png" alt="" id="magnify">
+
             <label for="search-bar">
               <input id="search-bar" type="text"></label>
-
+            
+              <img src="microphone.png" alt="" id="microphone">
+          </div>
             <div id="main-button-box">
               <label for="submit">
                 <button type="submit" id="submit" class="main-buttons">Google Search</button></label>
@@ -204,6 +234,8 @@
                 <button id="lucky" class="main-buttons">I'm Feeling Lucky</button></label>
             </div>            
         </form>
+
+        
 
         <div id="language-change"><p>Google offered in: <a href="" class="nav-links" style="color: #1a0dab;">Français</a></p></div>
     </main>
